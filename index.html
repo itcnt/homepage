@@ -1,0 +1,175 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="">
+
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="千葉ニュータウンのIT利用を活性化！">
+    <meta name="author" content="ITサポート千葉ニュータウン">
+    <title>ITサポート千葉ニュータウン｜千葉ニュータウンのIT利用を活性化！</title>
+    <!-- main JS libs -->
+    <script src="js/libs/modernizr.min.js"></script>
+    <script src="js/libs/jquery-1.10.0.js"></script>
+    <script src="js/libs/jquery-ui.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    
+    <!-- Style CSS -->
+    <link href="css/bootstrap.css" media="screen" rel="stylesheet">
+    <link href="style.css" media="screen" rel="stylesheet">
+    
+    <!-- scripts -->
+    <script src="js/general.js"></script>
+    
+    <!-- custom input -->
+    <script src="js/jquery.customInput.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!-- Placeholders -->
+    <script type="text/javascript" src="js/jquery.powerful-placeholder.min.js"></script>
+    <!-- Lightbox prettyPhoto -->
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <!-- CarouFredSel  -->
+    <script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+    
+            $('#carouFredsel-1').carouFredSel({
+                next : "#carousel-next-1",
+                prev : "#carousel-prev-1",
+                auto: false,
+                scroll: {items : 1}
+            });
+    
+            $(window).resize(function() {
+    
+                $('#carouFredsel-1').carouFredSel({
+                    next : "#carousel-next-1",
+                    prev : "#carousel-prev-1",
+                    auto: false,
+                    scroll: {items : 1}
+                });
+            })
+        });
+    </script>
+    
+    <!-- Scroll Bars -->
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function()
+        {
+            jQuery('.scrollbar').jScrollPane({
+                verticalDragMaxHeight: 18,
+                verticalDragMinHeight:18
+            });
+    
+            jQuery('.scrollbar.style2').jScrollPane({
+                verticalDragMaxHeight: 28,
+                verticalDragMinHeight:28
+            });
+    
+            jQuery('.scrollbar.style3').jScrollPane({
+                verticalDragMaxHeight: 38,
+                verticalDragMinHeight:38
+            });
+    
+            jQuery('.scrollbar.style4').jScrollPane({
+                verticalDragMaxHeight: 38,
+                verticalDragMinHeight:38
+            });
+        });
+    </script>
+    
+    <!--[if lt IE 9]><script src="js/respond.min.js"></script><![endif]-->
+    <!--[if gte IE 9]>
+    <style type="text/css">
+        .gradient {filter: none !important;}
+    </style>
+    <![endif]-->
+
+	<script>
+    $(function(){
+       // #で始まるアンカーをクリックした場合に処理
+       $('a[href^=#]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒
+          // アンカーの値取得
+          var href= $(this).attr("href");
+          // 移動先を取得
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          // 移動先を数値で取得
+          var position = target.offset().top;
+          // スムーススクロール
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+       });
+    });
+    </script>
+</head>
+
+<body id="pagetop">
+<header id="header">
+    <div class="container">
+        <a href="http://www.itcnt.gr.jp/"><h1><img src="images/logo.png" alt="ITサポート千葉ニュータウン" /></h1></a>
+    </div>
+    <div class="gnav">
+        <ul class="menu">
+            <li><a href="#first_clm">団体の目的</a></li>
+            <li><a href="#second_clm">活動内容</a></li>
+            <li><a href="#third_clm">料金表</a></li>
+            <li><a href="#fourth_clm">メンバー</a></li>
+        </ul>
+    </div>
+</header>
+<section id="first_clm">
+	<div class="container">
+		<h2>団体の目的</h2>
+		<a href="#pagetop"><p align="right">TOP</p></a>
+    </div>
+</section>
+<section id="second_clm">
+    <div class="container">
+        <h2>活動内容</h2>
+        <ul class="service_list">
+            <li>住民活動のホームページ作成支援</li>
+            <li>個人ネット販売のサポート</li>
+            <li>高齢者向けスマートフォンの利用サポート</li>
+            <li>高齢者向けネットスーパーの利用サポート</li>
+            <li>電子決算などの導入支援</li>
+            <li>チラシや名刺等、販促物の作成支援</li>
+        </ul>
+		<a href="#pagetop"><p align="right">TOP</p></a>
+    </div>
+</section>
+<section id="third_clm">
+    <div class="container">
+        <h2>料金表</h2>
+		<table class="table-bordered">
+			<tr>
+                <th></th>
+                <td></td>
+			</tr>
+        </table>
+		<a href="#header"><p align="right">TOP</p></a>
+    </div>
+</section>
+<section id="fourth_clm">
+	<div class="container">
+ 		<h2>メンバー紹介</h2>
+        <h3>藤巻 雅己</h3>
+        <h3>川村 勉</h3>
+        <h3>西村 純一</h3>
+		<a href="#pagetop"><p align="right">TOP</p></a>
+	</div>
+</section>
+<footer>
+    <div class="container">
+        <p>&copy; IT SUPPORT CHIBA NEW TOWN</p>
+    </div>
+</footer>
+</body>
+</html>
